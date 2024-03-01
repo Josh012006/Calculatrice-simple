@@ -1,0 +1,92 @@
+/*L'ensemble de la calculatrice */
+#container
+{
+    display: flex;
+    flex-direction:column;
+    width:582px;
+    height:900px;
+    margin:auto;
+    padding:none;
+}
+
+/*L'écran*/
+#screen
+{
+    padding: 15px;
+    height:30%;
+    background-color: rgb(40, 40, 40);
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#cursor
+{
+    border:3px solid blue;
+    height: 40%;
+}
+.clignote
+{
+    opacity: 0;
+}
+
+#result
+{
+    height: 40%;
+    color:white;
+    font-size: 72px;
+
+    display:inline-flex;
+    max-width: 90%;
+    flex-wrap: wrap;
+}
+
+/*Les nombres*/
+#grille
+{
+    height:70%;
+
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    background-color: rgb(35, 35, 35);
+}
+
+
+#equal
+{
+    grid-area: 4/4/6/5;
+    background-color: blue;
+    height:200px;
+
+    border-radius: 30px;
+}
+#equal:hover
+{
+    background-color: rgb(67, 67, 244);
+}
+
+.elements
+{
+    margin:auto;
+    height: 75px;
+    width: 75px;
+    background-color:rgb(74, 73, 73);
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elements:hover
+{
+    background-color:dimgray;
+}
+
+#exponant
+{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+}

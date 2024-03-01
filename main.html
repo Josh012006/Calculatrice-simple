@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculatrice</title>
+
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "screen">
+                <div id = "result">0</div>
+                <div id = "cursor" class = "clignote"></div>
+            </div>
+            <div id = "grille">
+                <div  class = "elements" onclick = "fullDelete()"><img alt = "C" src = "media/c.png"></div>
+                <div  class = "elements" onclick = "operation('/')"><img alt = "/" src = "media/divide.png"></div>
+                <div  class = "elements" onclick = "operation('*')"><img alt = "*" src = "media/times.png"></div>
+                <div  class = "elements" id = "delete" onclick = "lightDelete()"><img alt = "cancel" src = "media/delete.png"></div>
+                <div  class = "elements" onclick = "add('7')"><img alt = "7" src = "media/seven.png"></div>
+                <div  class = "elements" onclick = "add('8')"><img alt = "8" src = "media/eight.png"></div>
+                <div  class = "elements" onclick = "add('9')"><img alt = "9" src = "media/nine.png"></div>
+                <div  class = "elements" onclick = "operation('-')"><img alt = "-" src = "media/minus.png"></div>
+                <div  class = "elements" onclick = "add('4')"><img alt = "4" src = "media/four.png"></div>
+                <div  class = "elements" onclick = "add('5')"><img alt = "5" src = "media/five.png"></div>
+                <div  class = "elements" onclick = "add('6')"><img alt = "6" src = "media/six.png"></div>
+                <div  class = "elements" onclick = "operation('+')"><img alt = "+" src = "media/plus.png"></div>
+                <div  class = "elements" onclick = "add('1')"><img alt = "1" src = "media/one.png"></div>
+                <div  class = "elements" onclick = "add('2')"><img alt = "2" src = "media/two.png"></div>
+                <div  class = "elements" onclick = "add('3')"><img alt = "3" src = "media/three.png"></div>
+                <div  class = "elements" onclick = "add('**')" id = "exponant">^</div>
+                <div  class = "elements" onclick = "add('0')"><img alt = "0" src = "media/zero.png"></div>
+                <div  class = "elements" onclick = "add('.')"><img alt = "." src = "media/point.png"></div>
+                <div  class = "elements" id = "equal" onclick = "displayResult()"><img alt = "=" src = "media/equal.png"></div>
+            </div>
+        </div>
+
+        <script src = "scripts.js"></script>
+    </body>
+</html>
