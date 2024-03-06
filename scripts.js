@@ -54,7 +54,10 @@ function displayResult()
         if(String(final).length <= 13)
             result.innerHTML = String(final);
         else
-            result.innerHTML = String(final.toExponential(6))
+            result.innerHTML = String(final.toExponential(6));
+
+        evaluated = "";
+        string = "";
     }
     catch(error)
     {
